@@ -1,0 +1,26 @@
+@use '../util' as *;
+
+.header {
+  margin-top: rem(36);
+
+  @include breakpoint(medium) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 700;
+
+    &__heading {
+      color: var(--figure-values);
+    }
+
+    &__fw-count {
+      font-size: rem(14);
+    }
+  }
+
+  &__toggle {
+  }
+}

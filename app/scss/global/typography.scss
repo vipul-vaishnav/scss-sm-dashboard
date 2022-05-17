@@ -7,6 +7,22 @@ h4,
 h5,
 h6 {
   font-size: rem(32);
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: rem(24);
+  margin-bottom: rem(3);
+
+  @include breakpoint(large) {
+    font-size: rem(28);
+  }
+}
+
+h2 {
+  @include breakpoint(large) {
+    font-size: rem(24);
+  }
 }
 
 a {
